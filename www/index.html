@@ -11,7 +11,7 @@
   <script src="main.js"></script>
 </head>
 <body ng-app="app">
-  <div ng-controller="controller as cont" id="app">
+  <div ng-controller="controller as cont" id="app" style="display:none">
     <div class="buttons">
         <button ng-if="cont.timers[cont.currentTimer].active && !cont.timers[cont.currentTimer].proc && !cont.timers[cont.currentTimer].finished" ng-click="cont.start(cont.currentTimer)" >Alarm {{cont.currentTimer+1}} Start</button>
         <button ng-if="cont.timers[cont.currentTimer].active && cont.timers[cont.currentTimer].proc" ng-click="cont.pause(cont.currentTimer)" >Alarm {{cont.currentTimer+1}} Pause</button>

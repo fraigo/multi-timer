@@ -90,5 +90,8 @@ angular.module('app', [])
       timer.active=0;
       app.currentTimer++;
       app.timers[index+1].active=1;
-    }
+    };
+    setTimeout(function(){
+      document.getElementById("app").style.display="";
+    },1000);
   })
