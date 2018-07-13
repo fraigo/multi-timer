@@ -18,7 +18,7 @@
         <button ng-if="cont.timers[cont.currentTimer].active && cont.timers[cont.currentTimer].ringing" ng-click="cont.stopRinging(cont.currentTimer)" >Alarm {{cont.currentTimer+1}} Stop</button>
     </div>
     <div class="timers">
-      <div ng-repeat="(index,timer) in cont.timers" class="timer">
+      <div ng-repeat="(index,timer) in cont.timers" class="timer {{index==cont.currentTimer?'active':''}}">
         
         <div class="progress" >
           <div class="status" style="width:{{cont.width(timer)}};background-color:{{timer.color}}"></div>

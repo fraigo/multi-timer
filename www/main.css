@@ -45,6 +45,11 @@ body, div{
   line-height: 60px;
 }
 
+.active{
+  border: 2px solid orange;
+  border-radius: 5px;
+}
+
 .status{
   background-color: green;
   overflow: hidden;

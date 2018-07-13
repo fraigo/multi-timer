@@ -36,11 +36,11 @@ angular.module('app', [])
     var app = this;
     var min=60;
     app.timers=[
-      {time:7*min, current:0, saved:0, active:1, color: '#8F8'},
-      {time:20*min, current:0, saved:0, color: '#FF8'},
-      {time:7*min, current:0, saved:0, color: '#8F8'},
-      {time:20*min, current:0, saved:0, color: '#FF8'},
-      {time:7*min, current:0, saved:0, color: '#8F8'}
+      {time:7*min, current:0, saved:0, active:1, color: '#8F8', timeMinutes: '7:00'},
+      {time:20*min, current:0, saved:0, color: '#FF8', timeMinutes: '20:00'},
+      {time:7*min, current:0, saved:0, color: '#8F8', timeMinutes: '7:00'},
+      {time:20*min, current:0, saved:0, color: '#FF8', timeMinutes: '20:00'},
+      {time:7*min, current:0, saved:0, color: '#8F8', timeMinutes: '7:00'}
     ];
     app.currentTimer=0;
     app.start=function(index){
